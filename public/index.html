@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CIO Web App">
+  <meta name="author" content="James Martin">
+  <title>CIO Test App</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='css/site.css' rel='stylesheet' type='text/css'>
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+
+<body ng-app="cio">
+  <form ng-controller="user">
+    <div id="grid" class="flex-container">
+      <div id="form">
+        <label>First Name:</label> <br>
+        <input type="text" ng-model="firstName" placeholder="First"> <br>
+        <label>Last Name:</label> <br>
+        <input type="text" ng-model="lastName" placeholder="Last"> <br>
+        <label>Address:</label> <br>
+        <input type="text" ng-model="address" placeholder="Address"> <br>
+        <label>Company:</label> <br>
+        <input type="text" ng-model="company" placeholder="Company"> <br>
+        <button ng-click="submit(firstName, lastName, address, company)">Submit</button> <br>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

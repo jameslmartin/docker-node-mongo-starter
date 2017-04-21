@@ -1,0 +1,27 @@
+{
+  "name": "cio",
+  "description": "Mock app as a programming exercise",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "gulp dev",
+    "debug": "gulp debug",
+    "unit-test": "gulp unit-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jameslmartin/austin-core-bike-trips"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "*",
+    "express-mongo-db": "^2.0.3",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "3.9.1",
+    "gulp-nodemon": "2.1.0",
+    "mocha": "^2.3.4"
+  }
+}
